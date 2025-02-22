@@ -1,0 +1,101 @@
+.passverify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #f0f4f8;
+  
+    .passverify-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+  
+      .passverify-title {
+        margin-bottom: 20px;
+        color: #0d47a1;
+        font-weight: bold;
+        font-size: 22px;
+      }
+  
+      .passverify-form {
+        display: flex;
+        flex-direction: column;
+  
+        .form-label {
+          text-align: left;
+          margin-bottom: 8px;
+          color: #333;
+          font-weight: 500;
+        }
+  
+        .form-input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 16px;
+          margin-bottom: 20px;
+          transition: border-color 0.3s;
+  
+          &:focus {
+            border-color: #0d47a1;
+            outline: none;
+          }
+        }
+  
+        .verify-button {
+          padding: 10px;
+          border: none;
+          border-radius: 6px;
+          background-color: #0d47a1;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background 0.3s;
+  
+          &:hover {
+            background-color: #1565c0;
+          }
+        }
+      }
+  
+      .message {
+        margin-top: 15px;
+        color: green;
+        font-weight: bold;
+      }
+  
+      .links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+  
+        .link {
+          color: #0d47a1;
+          text-decoration: none;
+          font-size: 14px;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #1565c0;
+          }
+        }
+      }
+    }
+  }
+  
+  // Responsive Design
+  @media (max-width: 480px) {
+    .passverify-box {
+      padding: 20px;
+      width: 90%;
+  
+      .passverify-title {
+        font-size: 20px;
+      }
+    }
+  }
+  

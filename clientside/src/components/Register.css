@@ -1,0 +1,275 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f7fa;
+  flex-wrap: wrap;
+}
+
+.register-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-heading {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+.form-input:focus {
+  border-color: #4CAF50;
+}
+
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.form-input-file {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.image-preview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-preview:hover {
+  transform: scale(1.05);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.register-button,
+.login-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.register-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.register-card .register-form input,
+.register-card .register-form button {
+  font-size: 1rem;
+}
+
+.register-card .register-form input:focus {
+  border-color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    padding: 10px;
+  }
+  .register-card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .register-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-upload {
+    margin-top: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .image-preview {
+    width: 100px;
+    height: 100px;
+  }
+
+  .register-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-heading {
+    font-size: 1.6rem;
+  }
+
+  .form-input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .register-button,
+  .login-button {
+    font-size: 0.9rem;
+  }
+
+  .register-card {
+    padding: 20px;
+  }.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.register-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form .MuiTextField-root {
+    margin-bottom: 16px;
+}
+
+.image-upload-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.image-upload-button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.image-preview {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-button, .login-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-button:hover, .login-button:hover {
+    background-color: #155a8a;
+}
+
+}

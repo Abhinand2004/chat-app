@@ -1,0 +1,97 @@
+.passchange-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 87vh;
+    position: relative;
+  }
+  
+  .passchange-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .passchange-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .passchange-field {
+    margin-bottom: 20px;
+    text-align: left;
+  
+    .passchange-label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #666;
+    }
+  
+    .passchange-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #333;
+      background: #fff;
+      transition: border-color 0.3s;
+  
+      &:focus {
+        border-color: #2575fc;
+        outline: none;
+      }
+    }
+  }
+  
+  .passchange-buttons {
+    display: flex;
+    flex-direction: column;
+  
+    .passchange-button,
+    .passchange-login-button {
+      background: #2575fc;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background 0.3s;
+  
+      &:hover {
+        background: #1e63d3;
+      }
+    }
+  
+    .passchange-login-button {
+      background: #fff;
+      color: #2575fc;
+      border: 1px solid #2575fc;
+  
+      &:hover {
+        background: #e6f0ff;
+      }
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .passchange-form {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .passchange-title {
+      font-size: 20px;
+    }
+  }
+  

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #075e54; 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+.navbar-container {
+  width: 100%; 
+  max-width: 1400px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo .logo-image {
+  height: 50px;
+  cursor: pointer;
+}
+
+.navbar-search .search-input {
+  width: 300px; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 30px; 
+  outline: none;
+  background-color: #128c7e;
+  color: white;
+  font-size: 16px; 
+  font-family: inherit;
+}
+
+.navbar-search .search-input::placeholder {
+  color: #d9f6ef;
+}
+
+.navbar-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username {
+  font-size: 18px; 
+  margin-right: 20px;
+  color: #ffffff; 
+}
+
+.profile-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid #ffffff; 
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1); 
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px; 
+  right: 0;
+  background-color: white;
+  color: #075e54;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 180px; 
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 15px; 
+  cursor: pointer;
+  font-size: 16px; 
+  text-align: center; 
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+
+@media (max-width: 1024px) {
+  .navbar{
+    height: 68px;
+  }
+  .navbar-container {
+    width: 95%;
+    max-width: 1200px;
+  }
+
+  .navbar-search .search-input {
+    width: 250px; 
+  }
+
+  .profile-image {
+    height: 40px; 
+    width: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar-container {
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-logo .logo-image {
+    height: 30px;
+  }
+
+  .navbar-search .search-input {
+    width: 150px;
+    height: 10px;
+  }
+
+  .username {
+    display: none; 
+  }
+
+  .profile-image {
+    height: 30px;
+    width: 30px;
+  }
+
+  .dropdown-menu {
+    width: 80px; 
+  }
+}
