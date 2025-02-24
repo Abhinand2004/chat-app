@@ -70,7 +70,7 @@ export async function verifyEmail(req, res) {
                             <h1 style="color: #4caf50;">Welcome to Msg-Mate!</h1>
                             <p style="font-size: 16px; color: #333;">Hello,</p>
                             <p style="font-size: 16px; color: #555;">Thank you for signing up with Msg-Mate. Please confirm your email address to activate your account:</p>
-                            <a href="http://localhost:5173/register" 
+                            <a href="https://chat-app-puce-six.vercel.app/register" 
                                style="display: inline-block; padding: 12px 25px; color: #fff; background-color: #4caf50; text-decoration: none; font-size: 16px; border-radius: 5px; margin-top: 20px;">
                                Confirm Account
                             </a>
@@ -138,7 +138,7 @@ export async function verifyforpasschange(req, res) {
                             <p style="font-size: 16px; color: #555;">
                                 We received a request to reset your password for your MsgMate account. Please click the button below to proceed with changing your password:
                             </p>
-                            <a href="http://localhost:5173/passchange" 
+                            <a href="https://chat-app-puce-six.vercel.app/passchange" 
                                style="display: inline-block; padding: 12px 25px; color: #fff; background-color: #1d55cd; text-decoration: none; font-size: 16px; border-radius: 5px; margin-top: 20px;">
                                Reset Password
                             </a>
